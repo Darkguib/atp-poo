@@ -19,7 +19,9 @@ public abstract class Equipamento implements Serializable {
         retorno+= "Marca: "+this.marca +"\n";
         retorno+= "Modelo: "+this.modelo +"\n";
         retorno+= "Tamanho da tela: "+this.tamanhoTela() +"\n";
+        retorno+= ""+this.especificacoes()+"\n";
         return retorno;
     }
     public abstract String tamanhoTela();
+    public abstract String especificacoes();
 }

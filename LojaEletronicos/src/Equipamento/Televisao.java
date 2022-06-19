@@ -1,12 +1,12 @@
 package Equipamento;
 
-public class Smartwatch extends Equipamento{
-    private String tipoPulseira;
+public class Televisao extends Equipamento{
     private String polegadas;
-    public Smartwatch(String marca, String modelo, String tipoPulseira, String polegadas) {
+    private String qualidadeImagem;
+    public Televisao(String marca, String modelo, String polegadas, String qualidadeImagem) {
         super(marca, modelo);
-        this.tipo = "Smartwatch";
-        this.tipoPulseira = tipoPulseira;
+        this.tipo = "Televisão";
+        this.qualidadeImagem = qualidadeImagem;
         this.polegadas = polegadas;
     }
 
@@ -18,7 +18,7 @@ public class Smartwatch extends Equipamento{
     @Override
     public String especificacoes() {
         String retorno = "";
-        retorno = "Tipo da pulseira: "+tipoPulseira+"\n";
+        retorno+="Qualidade da imagem: "+qualidadeImagem+"\n";
         return retorno;
     }
 }

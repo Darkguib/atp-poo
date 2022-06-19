@@ -83,10 +83,10 @@ public class Teste {
     public static void main(String[]args){
         Teste teste = new Teste();
 
-        Notebook notebook = new Notebook("Acer","Aspire 5","8 GB", "I5");
-        Smartphone smartphone = new Smartphone("Samsung","Note 9", "2","6 GB");
-        Smartwatch smartwatch = new Smartwatch("Amazon","Amaz Fit", "Sintético");
-        CameraDigital cameraDigital = new CameraDigital("Sony","DSC-W800","20.1","5x");
+        Notebook notebook = new Notebook("Acer","Aspire 5","8 GB", "I5","15.6");
+        Smartphone smartphone = new Smartphone("Samsung","Note 9", "2","6 GB","6");
+        Smartwatch smartwatch = new Smartwatch("Amazon","Amaz Fit", "Sintético","2");
+        CameraDigital cameraDigital = new CameraDigital("Sony","DSC-W800","20.1","5x","2.5");
 
         teste.adicionarEquipamento(notebook);
         teste.adicionarEquipamento(smartphone);
